@@ -12,10 +12,12 @@ import com.social.shop.socialshop.Models.Profile;
 import com.social.shop.socialshop.Models.SocialProvider;
 import com.social.shop.socialshop.Models.Store;
 import com.social.shop.socialshop.Models.User;
+import com.social.shop.socialshop.R;
+
 import java.sql.SQLException;
 
 /**
- * Created by jcml3 on 6/04/2016.
+ * Creado por Deimer, fecha: 6/04/2016.
  */
 public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
 
@@ -23,7 +25,7 @@ public class DatabaseHelper extends OrmLiteSqliteOpenHelper {
     private static final int DATABASE_VERSION = 1;
 
     public DatabaseHelper(Context context){
-        super(context, DATABASE_NAME, null, DATABASE_VERSION, null);
+        super(context, DATABASE_NAME, null, DATABASE_VERSION, R.raw.ormlite_config);
     }
 
     private Dao<User, Integer> userDao = null;
