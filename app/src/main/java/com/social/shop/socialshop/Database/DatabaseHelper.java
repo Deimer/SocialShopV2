@@ -13,7 +13,6 @@ import com.social.shop.socialshop.Models.SocialProvider;
 import com.social.shop.socialshop.Models.Store;
 import com.social.shop.socialshop.Models.User;
 import com.social.shop.socialshop.R;
-
 import java.sql.SQLException;
 
 /**
