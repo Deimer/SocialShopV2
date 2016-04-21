@@ -1,17 +1,21 @@
 package com.social.shop.socialshop.Models;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
 
 /**
- * Created by jcml3 on 6/04/2016.
+ * Creado por Juan Carlos on 6/04/2016.
  */
 @DatabaseTable(tableName = "social_providers")
 public class SocialProvider {
 
+    @Expose
     @DatabaseField(generatedId = true)
     private int id;
 
+    @SerializedName("id")
     @DatabaseField(canBeNull = false)
     private int social_id;
     @DatabaseField(canBeNull = false)

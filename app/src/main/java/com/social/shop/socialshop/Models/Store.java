@@ -1,5 +1,7 @@
 package com.social.shop.socialshop.Models;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
 
@@ -12,9 +14,11 @@ import com.j256.ormlite.table.DatabaseTable;
 @DatabaseTable(tableName = "stores")
 public class Store {
 
+    @Expose
     @DatabaseField(generatedId = true)
     private int id;
 
+    @SerializedName("id")
     @DatabaseField(canBeNull = false)
     private int store_id;
     @DatabaseField(canBeNull = false)

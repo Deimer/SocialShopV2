@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">SocialShop</string>
+    <string name="title_activity_login">Login</string>
+    <string name="url_con">http://52.24.202.178</string>
+
+    <!-- dialogs message-->
+    <string name="sign_in">Validating user…</string>
+    <string name="alerta_conexion_1">Connection error</string>
+    <string name="alerta_conexion_2">It could not detect an active Internet connection</string>
+
+    <!-- Login -->
+    <string name="login_or_register">Login or register</string>
+    <string name="login_email">Email</string>
+    <string name="login_password">Password</string>
+    <string name="login_log_in">Log In</string>
+    <string name="login_forgot_password">Forgot Password?</string>
+    <string name="login_log_in_social">Or Log In Using</string>
+    <!-- Register -->
+    <string name="register_first_name">First name</string>
+    <string name="register_last_name">Last name</string>
+    <string name="register_email">Email</string>
+    <string name="register_username">Username</string>
+    <string name="register_password">Password</string>
+    <string name="register_sign_up">Sign Up</string>
+    <string name="register_sign_in_social">Or Sign Up Using</string>
+    <string name="title_activity_detail_register">DetailRegister</string>
+    <!-- Detail of register -->
+    <string name="detail_register">Your registration details</string>
+    <string name="register_buyer">Buyer</string>
+    <string name="register_seller">Seller</string>
 </resources>

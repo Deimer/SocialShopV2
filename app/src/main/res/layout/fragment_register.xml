@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.TabRegister">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:paddingTop="4dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/ic_identity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/txt_first_name"
+                        android:hint="@string/register_first_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/txt_last_name"
+                        android:hint="@string/register_last_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="bottom"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/ic_action_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/txt_email_register"
+                    android:hint="@string/register_email"
+                    android:inputType="textEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="bottom"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/ic_identity_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/txt_username_register"
+                    android:hint="@string/register_username"
+                    android:inputType="textEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="bottom"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/ic_key"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/txt_password_register"
+                    android:hint="@string/register_password"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/but_sign_in"
+                android:text="@string/register_sign_up"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/border_rounded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:background="@color/divider"
+                        android:layout_weight=".30"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"/>
+                    <TextView
+                        android:text="@string/register_sign_in_social"
+                        android:textSize="16sp"
+                        android:textColor="@color/secondary_text"
+                        android:gravity="center"
+                        android:layout_weight=".40"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <View
+                        android:background="@color/divider"
+                        android:layout_weight=".30"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/but_login_facebook"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/ic_login_facebook"
+                        android:layout_weight=".33"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:id="@+id/but_login_google"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/ic_login_google"
+                        android:layout_weight=".33"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:id="@+id/but_login_instagram"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/ic_login_instagram"
+                        android:layout_weight=".33"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.percent.PercentFrameLayout>
